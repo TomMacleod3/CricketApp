@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Stats</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='indexstyle.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Player Stats</h1>
+        <form method="POST" action="/CricketStats">
+            <div class="input-group">
+                <input type="text" name="fName_input" placeholder="First Name">
+                <input type="text" name="sName_input" placeholder="Last Name">
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+         </form>
+    </div>
+</body>
+</html>
